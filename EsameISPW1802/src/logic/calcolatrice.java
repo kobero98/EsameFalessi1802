@@ -109,7 +109,7 @@ public class calcolatrice {
 		Double s=Double.valueOf(this.secondo.getText());
 		if(s==0) {
 			risultato.setVisible(true);
-			risultato.setText("nonsi può dividere per 0");
+			risultato.setText("nonsi puï¿½ dividere per 0");
 		}
 		risultato.setVisible(true);
 		risultato.setText(String.valueOf(p/s));
@@ -126,6 +126,7 @@ public class calcolatrice {
 		if(!controllo(this.primo.getText()))
 			return;
 		Double p= Double.valueOf(this.primo.getText());
+		if(p<=0) return;
 		risultato.setVisible(true);
 		risultato.setText(String.valueOf(Math.log(p)));
 		
@@ -136,6 +137,7 @@ public class calcolatrice {
 		if(!controllo(this.secondo.getText()))
 			return;
 		Double s=Double.valueOf(this.secondo.getText());
+		if(s<=0) return;
 		res2.setVisible(true);
 		res2.setText(String.valueOf(Math.log(s)));	
 	}
@@ -148,6 +150,7 @@ public class calcolatrice {
 		if(!controllo(this.primo.getText()))
 			return;
 		Double p= Double.valueOf(this.primo.getText());
+		if(p<0) return;
 		risultato.setVisible(true);
 		risultato.setText(String.valueOf(Math.sqrt(p)));
 		
@@ -158,6 +161,7 @@ public class calcolatrice {
 		if(!controllo(this.secondo.getText()))
 			return;
 		Double s=Double.valueOf(this.secondo.getText());
+		if(s<=0) return;
 		res2.setVisible(true);
 		res2.setText(String.valueOf(Math.sqrt(s)));	
 	}

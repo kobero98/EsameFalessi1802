@@ -4,7 +4,7 @@ jdk:
 addons:
   sonarcloud:
     organization: kobero98
-    token: d6dba984e63b7145affaab548b1e03915b8d4734
+    token: d8a3c895e5635111b05f306ed263796fa9542391
 script:
-  - ant -buildfile testTravis12/build.xml
+  - ant -buildfile EsameISPW1802/build.xml
   - sonar-scanner

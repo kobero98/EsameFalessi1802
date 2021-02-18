@@ -109,7 +109,8 @@ public class calcolatrice {
 		Double s=Double.valueOf(this.secondo.getText());
 		if(s==0) {
 			risultato.setVisible(true);
-			risultato.setText("nonsi pu� dividere per 0");
+			risultato.setText("non si puo dividere per 0");
+			return;
 		}
 		risultato.setVisible(true);
 		risultato.setText(String.valueOf(p/s));

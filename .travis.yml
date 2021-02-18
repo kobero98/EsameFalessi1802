@@ -1,0 +1,10 @@
+language: java
+jdk:
+  - openjdk15
+addons:
+  sonarcloud:
+    organization: kobero98
+    token: d6dba984e63b7145affaab548b1e03915b8d4734
+script:
+  - ant -buildfile testTravis12/build.xml
+  - sonar-scanner
